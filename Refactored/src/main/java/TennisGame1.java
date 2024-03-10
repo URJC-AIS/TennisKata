@@ -76,7 +76,7 @@ public class TennisGame1 implements TennisGame {
     private String scoreToTextAux(String score, int tempScore) {
 
         String[] scoreText = {"Love", "Fifteen", "Thirty", "Forty"};
-        return scoreText[tempScore];
+        return score += scoreText[tempScore];
 
     }
 
