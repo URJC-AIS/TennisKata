@@ -1,6 +1,8 @@
 
 public class TennisGame1 implements TennisGame {
 
+    private final static String[] SCORE_TEXT = {"Love", "Fifteen", "Thirty", "Forty"};
+
     private int m_score1 = 0;
     private int m_score2 = 0;
 
@@ -74,10 +76,7 @@ public class TennisGame1 implements TennisGame {
     }
 
     private String scoreToTextAux(String score, int tempScore) {
-
-        String[] scoreText = {"Love", "Fifteen", "Thirty", "Forty"};
-        return score += scoreText[tempScore];
-
+        return score += SCORE_TEXT[tempScore];
     }
 
 }
