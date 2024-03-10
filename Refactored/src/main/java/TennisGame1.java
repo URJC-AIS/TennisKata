@@ -27,23 +27,29 @@ public class TennisGame1 implements TennisGame {
     }
 
     private String scoreToTextWhenEquals() {
-        String score;
-        switch (m_score1) {
-            case 0:
-                score = "Love-All";
-                break;
-            case 1:
-                score = "Fifteen-All";
-                break;
-            case 2:
-                score = "Thirty-All";
-                break;
-            default:
-                score = "Deuce";
-                break;
 
+        if(m_score1 <= 3){
+            return SCORE_TEXT[m_score1] + "-All";
+        }else{
+            String score;
+            switch (m_score1) {
+                case 0:
+                    score = "Love-All";
+                    break;
+                case 1:
+                    score = "Fifteen-All";
+                    break;
+                case 2:
+                    score = "Thirty-All";
+                    break;
+                default:
+                    score = "Deuce";
+                    break;
+    
+            }
+            return score;
         }
-        return score;
+        
     }
 
     private String scoreToText4orMore() {
