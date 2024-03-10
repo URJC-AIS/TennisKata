@@ -21,12 +21,13 @@ public class TennisGame1 implements TennisGame {
         } else if (m_score1 >= 4 || m_score2 >= 4) {
             score = scoreToText4orMore();
         } else {
-            score = scoreToTextNotEqualsAndLessThan4(score);
+            score = scoreToTextNotEqualsAndLessThan4();
         }
         return score;
     }
 
-    private String scoreToTextNotEqualsAndLessThan4(String score) {
+    private String scoreToTextNotEqualsAndLessThan4() {
+        String score = "";
         int tempScore;
         for (int i = 1; i < 3; i++) {
             if (i == 1)
