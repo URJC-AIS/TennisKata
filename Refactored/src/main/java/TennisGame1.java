@@ -65,6 +65,7 @@ public class TennisGame1 implements TennisGame {
         int tempScore;
 
         tempScore = m_score1;
+        score = scoreToTextAux(score, tempScore);
 
         score += "-";
         tempScore = m_score2;
