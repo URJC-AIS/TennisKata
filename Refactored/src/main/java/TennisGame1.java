@@ -28,7 +28,7 @@ public class TennisGame1 implements TennisGame {
 
     private String scoreToTextWhenEquals() {
 
-        if(m_score1 <= 3){
+        if(m_score1 <= 2){
             return SCORE_TEXT[m_score1] + "-All";
         }else{
             String score;
