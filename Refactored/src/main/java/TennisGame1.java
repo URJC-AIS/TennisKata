@@ -61,13 +61,7 @@ public class TennisGame1 implements TennisGame {
     }
 
     private String scoreToTextNotEqualsAndLessThan4() {
-        String score = "";
-
-        score += SCORE_TEXT[m_score1];
-        score += "-";
-        score += SCORE_TEXT[m_score2];
-
-        return score;
+        return SCORE_TEXT[m_score1] + "-" + SCORE_TEXT[m_score2];
     }
 
 }
