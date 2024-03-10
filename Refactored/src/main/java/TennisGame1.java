@@ -38,12 +38,12 @@ public class TennisGame1 implements TennisGame {
 
     private String scoreToText4orMore() {
         String score;
-        int minusResult = m_score1 - m_score2;
-        if (minusResult == 1)
+        int scoreDiff = m_score1 - m_score2;
+        if (scoreDiff == 1)
             score = "Advantage player1";
-        else if (minusResult == -1)
+        else if (scoreDiff == -1)
             score = "Advantage player2";
-        else if (minusResult >= 2)
+        else if (scoreDiff >= 2)
             score = "Win for player1";
         else
             score = "Win for player2";
