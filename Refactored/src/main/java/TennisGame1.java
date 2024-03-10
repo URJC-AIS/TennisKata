@@ -15,15 +15,13 @@ public class TennisGame1 implements TennisGame {
     }
 
     public String getScore() {
-        String score;
         if (m_score1 == m_score2) {
-            score = scoreToTextWhenEquals();
+            return scoreToTextWhenEquals();
         } else if (m_score1 >= 4 || m_score2 >= 4) {
-            score = scoreToText4orMore();
+            return scoreToText4orMore();
         } else {
-            score = scoreToTextNotEqualsAndLessThan4();
+            return scoreToTextNotEqualsAndLessThan4();
         }
-        return score;
     }
 
     private String scoreToTextNotEqualsAndLessThan4() {
