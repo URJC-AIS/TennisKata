@@ -37,17 +37,15 @@ public class TennisGame1 implements TennisGame {
     }
 
     private String scoreToText4orMore() {
-        String score;
         int scoreDiff = m_score1 - m_score2;
         if (scoreDiff == 1)
-            score = "Advantage player1";
+            return "Advantage player1";
         else if (scoreDiff == -1)
-            score = "Advantage player2";
+            return "Advantage player2";
         else if (scoreDiff >= 2)
-            score = "Win for player1";
+            return "Win for player1";
         else
-            score = "Win for player2";
-        return score;
+            return "Win for player2";
     }
 
     private String scoreToTextNotEqualsAndLessThan4() {
